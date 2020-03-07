@@ -47,7 +47,11 @@ p.sectitle {
   color: dodgerblue;
   font-weight: bold;
 }
-
+p.news {
+  text-align: left;
+  color: darkred;
+  font-weight: bold;
+}
 #paral {
   text-align: left;
   color: #333;

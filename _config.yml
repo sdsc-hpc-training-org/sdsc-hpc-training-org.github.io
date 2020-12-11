@@ -1,6 +1,6 @@
 title: beta-test
 description: beta-test for SDSC101
-baseurl: "/beta-test"
+baseurl: ""
 theme: null
 
 # debug:
@@ -29,7 +29,7 @@ exclude:
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
- 
+
 kramdown:
   syntax_highlighter_opts:
     block:

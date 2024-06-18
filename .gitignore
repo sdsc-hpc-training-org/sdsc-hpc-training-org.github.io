@@ -1,3 +1,4 @@
+./howto.sync.jekyll.submodules.txt
 _site
 _site/*
 .sass-cache

@@ -4,6 +4,3 @@
 [submodule "galyleo"]
 	path = galyleo
 	url = https://github.com/mkandes/galyleo
-[submodule "hpc-security"]
-	path = hpc-security
-	url = https://github.com/sdsc-hpc-training-org/hpc-security

@@ -1,9 +1,9 @@
-[submodule "1. expanse-101"]
-	path = expanse-101
-	url = https://github.com/sdsc-hpc-training-org/expanse-101.git
-[submodule "2. galyleo"]
-	path = galyleo
-	url = https://github.com/mkandes/galyleo
-[submodule "3. basic_skills"]
+[submodule "basic_skills"]
 	path = basic_skills
 	url = https://github.com/sdsc-hpc-training-org/basic_skills.git
+[submodule "galyleo"]
+	path = galyleo
+	url = https://github.com/mkandes/galyleo
+[submodule "expanse-101"]
+	path = expanse-101
+	url = https://github.com/sdsc-hpc-training-org/expanse-101.git

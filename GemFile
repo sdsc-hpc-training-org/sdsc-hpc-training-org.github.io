@@ -1,5 +1,14 @@
-source "https://rubygems.org" # source "https://gems.ruby-china.com"
+source "https://rubygems.org"
 
-gemspec
+# Use an actively supported Jekyll release instead of legacy github-pages pinning.
+gem "jekyll", "~> 4.3.4"
+# Ruby 2.6 compatibility: ffi 1.17+ requires Ruby >= 3.0.
+gem "ffi", "< 1.17"
 
-gem "github-pages", group: :jekyll_plugins
+group :jekyll_plugins do
+  gem "jekyll-avatar", "~> 0.8"
+  gem "jekyll-github-metadata", "~> 2.13"
+  gem "jekyll-mentions", "~> 1.6"
+  gem "jekyll-readme-index", "~> 0.3"
+  gem "jemoji", "~> 0.13"
+end

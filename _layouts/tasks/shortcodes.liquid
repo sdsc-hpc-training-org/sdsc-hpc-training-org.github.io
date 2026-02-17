@@ -16,7 +16,13 @@
                     {%- assign lang   = custom.first -%}
                     {%- assign codes  = custom.last | split: "</code>" | first -%}
                     {%- if shortcodes contains lang -%}
-                        {%- include shortcodes/{{ lang }}.liquid -%} {{- pre_blocks.last -}}
+                        {%- case lang -%}
+                            {%- when "mermaid" -%}{%- include shortcodes/mermaid.liquid -%}
+                            {%- when "warning" -%}{%- include shortcodes/warning.liquid -%}
+                            {%- when "note" -%}{%- include shortcodes/note.liquid -%}
+                            {%- when "tip" -%}{%- include shortcodes/tip.liquid -%}
+                            {%- when "danger" -%}{%- include shortcodes/danger.liquid -%}
+                        {%- endcase -%} {{- pre_blocks.last -}}
                     {%- else -%}
                         <pre{{ pre_blocks.first }}</pre> {{ pre_blocks.last }}
                     {%- endif -%}

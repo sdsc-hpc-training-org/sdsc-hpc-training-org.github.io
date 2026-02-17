@@ -14,7 +14,9 @@ readme_index:
 plugins:
   - jemoji
   - jekyll-avatar
+  - jekyll-github-metadata
   - jekyll-mentions
+  - jekyll-readme-index
 
 exclude:
   - Makefile

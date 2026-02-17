@@ -24,10 +24,11 @@
 {%- assign schema_modi = site.time | date_to_xmlschema -%}
 {%- assign schema_surl = page.url  | absolute_url | xml_escape -%}
 
-{% comment %} debug {% endcomment %}
-{%- if site.debug -%}
-    {%- assign base = site.baseurl -%}
-{%- else -%}
+{% comment %} assets base
+Prefer local assets by default so builds do not depend on a remote theme CDN.
+Set site.theme_cdn to true to opt in to jsDelivr-based assets. {% endcomment %}
+{%- assign base = site.baseurl -%}
+{%- if site.theme_cdn -%}
     {%- assign base = "https://cdn.jsdelivr.net/gh/" | append: theme_alias -%}
 {%- endif -%}
 

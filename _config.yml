@@ -31,8 +31,8 @@ exclude:
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
-  
-
+  - expanse-101/mkdocs-index.md
+  - expanse-101/docs
 kramdown:
   syntax_highlighter_opts:
     block:
